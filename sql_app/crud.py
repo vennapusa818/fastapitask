@@ -99,3 +99,5 @@ def create_user_ad(db: Session, ad: schemas.AdCreate, user_id: int):
 
 def get_ads(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Ad).offset(skip).limit(limit).all()
+
+
